@@ -3,7 +3,7 @@ Topic: "RAM Bomb"
 Author: "구FS"
 ---
 <link href="md_style.css" rel="stylesheet"></link>
-<div id="global">
+<body>
 
 # <p style="text-align: center">RAM Bomb</p>
 <br>
@@ -17,4 +17,4 @@ Author: "구FS"
 
 Just execute it bro, trust me.
 
-</div>
+</body>

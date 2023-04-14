@@ -1,21 +1,35 @@
 /**Copyright (c) 2023 구FS, all rights reserved. Subject to the MIT licence in `licence.md`.**/
-div#global                      /**global style**/
+body                            /**global style**/
 {
     font-family: Maven Pro, Calibri, Helvetica, Arial;
     font-size: 15px;
     text-align: justify;        /**block alignment**/
 }
 
-code                            /**source code**/
+code                            /**source code inline**/
 {
+    color: #d4af37;
+    /**color: inherit;**/
     font-family: Cascadia Code, Consolas, Courier New;
     font-size: 12px;
-    text-align: left;
 }
 p.img_caption                   /**image caption**/
 {
     font-style: italic;
 }
+
+pre:not(.hljs)                  /**source code block background**/
+{
+    /**background-color: #1e1e1e;**/
+}
+pre code                        /**source code block foreground**/
+{
+    /**color: #ffffff;**/
+    font-family: Cascadia Code, Consolas, Courier New;
+    font-size: 12px;
+    text-align: left;
+}
+
 ol                              /**ordered list**/
 {
     padding-left: 5mm;
@@ -30,23 +44,51 @@ ul ul
     list-style: disc;           /**level 2 and below get point**/
 }
 
-.img_centre                     /**default image in centre**/
+.img_centre_30                  /**default image in centre**/
+{
+    display: block;             /**not inline, takes up whole width**/
+    margin: 0mm auto 3mm auto;
+    width: 30%;                 /**size**/
+}
+
+.img_centre_50                  /**default image in centre**/
+{
+    display: block;             /**not inline, takes up whole width**/
+    margin: 0mm auto 3mm auto;
+    width: 50%;                 /**size**/
+}
+
+.img_centre_100                 /**default image in centre**/
 {
     display: block;             /**not inline, takes up whole width**/
     margin: 0mm auto 3mm auto;
     width: 100%;                /**size**/
 }
 
+.img_left_30                    /**default image on left side**/
+{
+    float: left;                /**align left**/
+    margin: 0mm 3mm 3mm 0mm;    /**margin to text**/
+    width: 30%;                 /**size**/
+}
+
+.img_left_50                    /**default image on left side**/
+{
+    float: left;                /**align left**/
+    margin: 0mm 3m 3mm 0mm;     /**margin to text**/
+    width: 50%;                 /**size**/
+}
+
 .img_right_30                   /**default image on right side**/
 {
-    float: right;               /**aligh right**/
+    float: right;               /**align right**/
     margin: 0mm 0mm 3mm 3mm;    /**margin to text**/
     width: 30%;                 /**size**/
 }
 
 .img_right_50                   /**default image on right side**/
 {
-    float: right;               /**aligh right**/
+    float: right;               /**align right**/
     margin: 0mm 0mm 3mm 3mm;    /**margin to text**/
     width: 50%;                 /**size**/
 }
