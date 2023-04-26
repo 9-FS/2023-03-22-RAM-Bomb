@@ -2,7 +2,7 @@
 Topic: "RAM Bomb"
 Author: "구FS"
 ---
-<link href="md_style.css" rel="stylesheet"></link>
+<link href="./doc_templates/md_style.css" rel="stylesheet"></link>
 <body>
 
 # <p style="text-align: center">RAM Bomb</p>
